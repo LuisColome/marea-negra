@@ -44,4 +44,4 @@ Without these projects, this WordPress Genesis Starter Child Theme wouldn't be w
 [changelog-badge]: https://img.shields.io/badge/Changelog-MareaNegra%20Genesis%20Starter%20Theme%20v1.0.0-orange
 [version-badge]: https://img.shields.io/badge/version-1.0.0-informational.svg
 [last-commit]: https://img.shields.io/github/last-commit/luiscolome/MareaNegra/develop?color=yellow&logoColor=red
-[last-commit-link]: https://github.com/LuisColome/the-dock/commit/develop
+[last-commit-link]: https://github.com/LuisColome/marea-negra/commit/develop
