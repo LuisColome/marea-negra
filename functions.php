@@ -4,7 +4,7 @@
  *
  * This file adds functions to the Genesis Sample Theme.
  *
- * @package TheDock
+ * @package MareaNegra
  * @author  Luis Colomé
  * @license GPL-2.0-or-later
  * @link    https://luiscolome.com/
