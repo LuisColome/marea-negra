@@ -10,7 +10,7 @@ Luis Colomé ( [@luiscolome](https://twitter.com/luiscolome) / [luiscolome.com](
 
 ## Summary
 
-WordPress Starter Theme for use as Child Theme of the Genesis Framework for building custom themes. Uses SCSS and PrePros to compile it. Tested up to WordPress 5.8.1 and Genesis 3.3.5.
+Gensis child Theme to use as a main theme on MareaNegra site. Uses SCSS and PrePros to compile it. Tested up to WordPress 5.8.1 and Genesis 3.3.5.
 
 ## Usage
 
