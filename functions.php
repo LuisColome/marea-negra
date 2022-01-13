@@ -15,7 +15,7 @@
  *
  */
 if ( ! isset( $content_width ) )
-	$content_width = 768;	
+	$content_width = 1300;	
 
  /**
  * Global enqueues
@@ -94,7 +94,7 @@ function ea_child_theme_setup() {
 	remove_image_size( '2048x2048' );
 
 	// Adds image sizes.
-	add_image_size( 'lcm-featured-images', 768, 432, true ); // 16:9
+	add_image_size( 'mn-featured-image', 768, 576, true ); // 4:3
 
 	/**
 	 * Register custom images sizes to use in Gutenberg
@@ -103,7 +103,7 @@ function ea_child_theme_setup() {
 		return array_merge( $sizes, array(
 
 		//Add your custom sizes here
-		'lcm-featured-images' => __( 'Featured Blog (768x432)' ),
+		'mn-featured-image' => __( 'Featured Blog (768x576)' ),
 		
 		) );
 	}
@@ -126,21 +126,27 @@ function ea_child_theme_setup() {
 	// -- Editor Font Sizes
 	add_theme_support( 'editor-font-sizes', array(
 		array(
-			'name'      => __( 'Small', 'ea_genesis_child' ),
-			'shortName' => __( 'S', 'ea_genesis_child' ),
-			'size'      => 16,
+			'name'      => __( 'Small', 'mareanegra' ),
+			'shortName' => __( 'S', 'mareanegra' ),
+			'size'      => 16                ,
 			'slug'      => 'small'
 		),
 		array(
-			'name'      => __( 'Normal', 'ea_genesis_child' ),
-			'shortName' => __( 'M', 'ea_genesis_child' ),
-			'size'      => 20,
+			'name'      => __( 'Normal', 'mareanegra' ),
+			'shortName' => __( 'M', 'mareanegra' ),
+			'size'      => 18,
 			'slug'      => 'normal'
 		),
 		array(
-			'name'      => __( 'Large', 'ea_genesis_child' ),
-			'shortName' => __( 'L', 'ea_genesis_child' ),
-			'size'      => 24,
+			'name'      => __( 'Large', 'mareanegra' ),
+			'shortName' => __( 'L', 'mareanegra' ),
+			'size'      => 22,
+			'slug'      => 'large'
+		),
+		array(
+			'name'      => __( 'Huge', 'mareanegra' ),
+			'shortName' => __( 'H', 'mareanegra' ),
+			'size'      => 28,
 			'slug'      => 'large'
 		),
 	) );
@@ -151,27 +157,32 @@ function ea_child_theme_setup() {
 	// -- Editor Color Palette
 	add_theme_support( 'editor-color-palette', array(
 		array(
-			'name'  => __( 'Orange', 'ea_genesis_child' ),
-			'slug'  => 'orange',
-			'color'	=> '#f36523',
-		),
-		array(
-			'name'  => __( 'Yellow', 'ea_genesis_child' ),
+			'name'  => __( 'Yellow', 'mareanegra' ),
 			'slug'  => 'yellow',
-			'color'	=> '#ffc401',
+			'color'	=> '#FCC208',
 		),
 		array(
-			'name'  => __( 'Grey', 'ea_genesis_child' ),
-			'slug'  => 'grey',
-			'color' => '#f2f3f8',
-		),
-		array(
-			'name'  => __( 'Dark grey', 'ea_genesis_child' ),
+			'name'  => __( 'Dark grey', 'mareanegra' ),
 			'slug'  => 'dark-grey',
-			'color' => '#616161',
+			'color' => '#313335',
 		),
 		array(
-			'name'  => __( 'White', 'ea_genesis_child' ),
+			'name'  => __( 'Mid grey', 'mareanegra' ),
+			'slug'  => 'mid-grey',
+			'color' => '#707070',
+		),
+		array(
+			'name'  => __( 'Ligt grey', 'mareanegra' ),
+			'slug'  => 'light-grey',
+			'color' => '#EEEEEE',
+		),
+		array(
+			'name'  => __( 'Slate blue', 'mareanegra' ),
+			'slug'  => 'slate-blue',
+			'color' => '#414B54',
+		),
+		array(
+			'name'  => __( 'White', 'mareanegra' ),
 			'slug'  => 'white',
 			'color' => '#ffffff',
 		),
@@ -194,8 +205,8 @@ add_action( 'genesis_setup', 'ea_child_theme_setup', 15 );
  * @return array
  */
 function ea_comment_text( $args ) {
-	$args['title_reply']          = __( 'Leave A Comment', 'ea_genesis_child' );
-	$args['label_submit']         = __( 'Post Comment',  'ea_genesis_child' );
+	$args['title_reply']          = __( 'Leave A Comment', 'mareanegra' );
+	$args['label_submit']         = __( 'Post Comment',  'mareanegra' );
 	$args['comment_notes_before'] = '';
 	$args['comment_notes_after']  = '';
 	return $args;
