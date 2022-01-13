@@ -1,0 +1,36 @@
+@use "abstracts" as *;
+@use "../../vendor/include-media" as *;
+
+/** Media and Text 
+--------------------------------------------- */
+
+.entry-content > *,
+.block-area > * {
+
+	.full-width-content &,
+	.content-width & {
+
+		@include media('>=600px') {
+			//remove the padding for alignfull and alignwide
+			&.wp-block-media-text.alignwide,
+			&.wp-block-media-text.alignfull {
+				padding: 0;
+			}
+		}
+
+        @include media('<600px') {
+            // give space between image and text on mobile
+            .wp-block-media-text.is-stacked-on-mobile figure {
+                margin-bottom: $block-margin;
+            }
+        }
+	}
+
+    // Make sure the border radius is working when the images is filling the content
+    &.wp-block-media-text.is-image-fill {
+
+        .wp-block-media-text__media {
+            border-radius: $border-radius;
+        }
+    }
+}

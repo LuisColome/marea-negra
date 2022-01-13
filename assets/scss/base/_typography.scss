@@ -1,0 +1,225 @@
+@use "abstracts" as *;
+
+/* Typographical Elements - General styles
+--------------------------------------------- */
+
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button,
+.gallery img {
+    transition: all 0.2s ease-in-out;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: underline;
+    text-decoration-color: $grey-7;
+    @include transition;
+
+    &:hover {
+        color: $grey-7;
+    }
+
+    svg {
+        @include transition;
+    }
+}
+
+// ol,
+// ul {
+//     // margin: 0;
+//     // padding: 0;
+// }
+
+hr {
+    border: 0;
+    border-collapse: collapse;
+    border-bottom: 1px solid currentColor;
+    clear: both;
+    color: $grey_3;
+    margin: 1.65em auto;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+/* Paragraph and Gutenberg font sizes
+--------------------------------------------- */
+
+p {
+    margin: 0 0 28px;
+    padding: 0;
+}
+// Add !important to override Gutenberg styles. 
+.has-small-font-size {
+    font-size: .9rem !important;
+}
+
+.has-normal-font-size {
+    font-size: 1rem !important;
+}
+
+.has-large-font-size {
+    font-size: 1.2rem;
+    font-size: clamp(1.1rem, 1rem + .5vw, 1.25rem) !important;
+}
+
+.has-huge-font-size {
+    font-size: 1.5rem;
+    font-size: clamp(1.45rem, 1.2rem + .5vw, 1.65rem) !important;
+}
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $grey_9;
+    font-family: $sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 1.15em 0 $block-margin;
+    scroll-margin-top: 5rem;  // for the header to not hide the title on anchor links. https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/
+
+    &.entry-title,
+    &.archive-title {
+        margin-top: 0;
+    }
+
+    a {
+        color: $grey-9;
+
+        &:hover {
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+h1 {
+    // @include font-sizes(34px, 48px, 42px);
+    font-size: clamp(2.2rem, 1.5rem + 2.5vw, 3rem);
+}
+
+h2 {
+    // @include font-sizes(26px, 32px, 36px);
+    font-size: clamp(1.9rem, 1.4rem + 2vw, 2.6rem);
+}
+
+h3 {
+    // @include font-sizes(22px, 26px, 28px);
+    font-size: clamp(1.6rem, 1.2rem + 1vw, 1.85rem);
+}
+
+h4{
+    // @include font-sizes(20px, 24px, 26px);
+    font-size: clamp(1.4rem, 1.1rem + .8vw, 1.7rem);
+}
+
+h5 {
+    // @include font-sizes(18px, 22px);
+    font-size: clamp(1.1rem, 1rem + .7vw, 1.4rem);
+}
+
+h6 {
+    font-size: clamp(1.05rem, 1rem + .5vw, 1.25rem);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Lists
+--------------------------------------------- */
+.entry-content > *,
+.block-editor > * {
+    
+    // Common lists
+    ul, ol {
+        padding-left: 2.5rem;
+        margin: $block-margin 0;
+
+        li {
+            // padding-bottom: .5rem;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+
+            ul, ol {
+                padding-top: .5rem;
+            }
+        }
+
+        &.wp-block-gallery {
+            padding-left: 0;
+
+            li {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    // Custom checked list
+    ul.checked-list {
+        list-style: none;
+
+        li {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 2px;
+                right:0;
+                bottom: 0;
+                left: -26px;
+                width: 24px;
+                height: 24px;
+                background: url(../icons/utility/check.svg) no-repeat ;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+/* Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+    vertical-align: top;
+}
+
+figure {
+    margin: 0;
+}
