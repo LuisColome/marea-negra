@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: $header-height;
     background-color: $white;
     padding: 0 $wrap_edge;
     border-bottom: 1px solid $grey_3;
@@ -25,14 +25,14 @@
         content: none;
     }
 
-    // &.shrink {
-    //     height: 60px;
-    //     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    &.shrink {
+        height: $shrink-header;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
-    //     .site-title a {
-    //     color: $grey_9;
-    //     } 
-    // }
+        .site-title a {
+        color: $grey_9;
+        } 
+    }
 
     .wrap {
         width: 100%;
