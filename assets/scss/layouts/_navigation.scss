@@ -66,7 +66,7 @@
                 display: block;
                 width: 0;
                 height: 2px;
-                background: brand-color('green');
+                background: $primary-color;
                 transition: width .3s;
                 margin-top: 5px;
             }
