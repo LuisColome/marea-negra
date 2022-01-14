@@ -27,7 +27,7 @@
 
 .site-inner {
     clear: both;
-    max-width: calc($grid-width + 60px); // 1200px wide plus padding
+    max-width: $grid-width; // 1200px wide plus padding
     margin: 0 auto;
     padding: 60px 0 30px;
 
@@ -49,7 +49,7 @@
 .sidebar-content {
 
     .site-inner {
-        max-width: 1200px;
+        max-width: $grid-width;
     }
 
     .content-area {
@@ -60,7 +60,7 @@
 }
 
 .full-width-content .site-main {
-    max-width: 1200px;
+    max-width: $grid-width;
     margin: 0 auto;
 }
 
