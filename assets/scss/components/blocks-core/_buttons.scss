@@ -7,12 +7,13 @@ $default: nth( nth( $brand_colors, 1 ), 1 ); // first color in $brand_colors arr
 
 .wp-block-button__link {
 	border: 2px solid brand-color( $default );
-	border-radius: 3px;
+	border-radius: $border-radius;
 	font-size: 20px;
-	font-weight: 700;
-	line-height: 32px;
+	font-weight: 500;
+	line-height: 1.55;
 	padding: .5em 1.5em;
 	text-decoration: none;
+    text-transform: uppercase;
 
 	.is-style-full &,
 	&.full {
@@ -21,10 +22,10 @@ $default: nth( nth( $brand_colors, 1 ), 1 ); // first color in $brand_colors arr
 	}
 
 	&:not(.has-text-color) {
-		color: white;
+		color: $base-color;
 
 		&:hover {
-			color: white;
+			color: $base-color;
 		}
 	}
 
@@ -33,8 +34,8 @@ $default: nth( nth( $brand_colors, 1 ), 1 ); // first color in $brand_colors arr
 
 		&:hover,
 		&:focus {
-            border: 2px solid brand-color( $default, 'darken' );
-			background-color: brand-color( $default, 'darken' );
+            border: 2px solid brand-color( $default, 'lighten' );
+			background-color: brand-color( $default, 'lighten' );
 		}
 	}
 
@@ -47,9 +48,9 @@ $default: nth( nth( $brand_colors, 1 ), 1 ); // first color in $brand_colors arr
 
         &:hover,
         &:focus {
-            border: 2px solid brand-color( $default, 'darken' );
-			background-color: brand-color( $default, 'darken' );
-            color: $white;
+            border: 2px solid brand-color( $default );
+			background-color: brand-color( $default );
+            color: $base-color;
         }
     }
     
@@ -64,7 +65,7 @@ $default: nth( nth( $brand_colors, 1 ), 1 ); // first color in $brand_colors arr
 
 		&.has-#{$name}-background-color:hover,
 		&.has-#{$name}-background-color:focus {
-			background-color: brand-color( $name, 'darken' );
+			background-color: brand-color( $name, 'lighten' );
 		}
 	}
 
