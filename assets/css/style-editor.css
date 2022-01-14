@@ -281,7 +281,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
@@ -604,7 +604,7 @@ figure {
 --------------------------------------------- */
 .site-inner {
   clear: both;
-  max-width: calc($grid-width + 60px);
+  max-width: 1300px;
   margin: 0 auto;
   padding: 60px 0 30px;
 }
@@ -619,7 +619,7 @@ figure {
 
 .content-sidebar .site-inner,
 .sidebar-content .site-inner {
-  max-width: 1200px;
+  max-width: 1300px;
 }
 .content-sidebar .content-area,
 .sidebar-content .content-area {
@@ -629,7 +629,7 @@ figure {
 }
 
 .full-width-content .site-main {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -751,7 +751,7 @@ figure {
 .content-width .editor-styles-wrapper > *.alignwide[class^=wp-block-kadence] {
   padding: 0;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .full-width-content .entry-content > *.alignwide, .content-width .entry-content > *.alignwide,
 .full-width-content .editor-styles-wrapper > *.alignwide,
 .content-width .editor-styles-wrapper > *.alignwide {
@@ -788,7 +788,7 @@ figure {
 .full-width-content .editor-styles-wrapper > *.alignfull .alignwide,
 .content-width .editor-styles-wrapper > *.alignwide .alignwide,
 .content-width .editor-styles-wrapper > *.alignfull .alignwide {
-  max-width: 1200px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1023,7 +1023,7 @@ textarea:focus:-ms-input-placeholder {
 body .editor-styles-wrapper .wp-block[data-align=full] .wp-block[data-align=wide],
 body .editor-styles-wrapper .wp-block[data-align=wide] .wp-block[data-align=wide],
 body .editor-styles-wrapper .wp-block[data-align=wide] {
-  max-width: 1200px;
+  max-width: 1300px;
 }
 
 /* Lists
@@ -1149,7 +1149,7 @@ table {
   padding: calc(5% + 10px) 5%;
   margin: 2.2rem auto;
   border: 2px solid #eeeeee;
-  border-radius: 4px;
+  border-radius: 5px;
   text-align: left;
 }
 .entry-content .wp-block-quote blockquote,
@@ -1251,7 +1251,7 @@ table {
   padding: 20px;
   margin-bottom: 1.375rem;
   background-color: #eeeeee;
-  border-radius: 4px;
+  border-radius: 5px;
   overflow: auto;
   white-space: nowrap;
 }
@@ -1347,7 +1347,7 @@ table {
   margin-bottom: 0;
 }
 .wp-block-group.alignwide .wp-block-group__inner-container, .wp-block-group.alignfull .wp-block-group__inner-container {
-  max-width: 1200px;
+  max-width: 1300px;
 }
 .wp-block-group.has-background:not(.has-grey-background-color) {
   color: #ffffff;
@@ -1433,7 +1433,7 @@ table {
 }
 .entry-content > *.wp-block-media-text.is-image-fill .wp-block-media-text__media,
 .block-area > *.wp-block-media-text.is-image-fill .wp-block-media-text__media {
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 /* Image and Gallery
@@ -1442,7 +1442,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 img.alignleft {
   float: left;
@@ -1573,13 +1573,13 @@ hr::before {
   border: none;
   color: #ffffff;
   background-color: #FCC208;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 .lcm-cf7-form .lcm-cf7-form__input input:hover {
   background-color: #FCC208;
 }
 .lcm-cf7-form input {
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 /* Genesis Simple FAQ
