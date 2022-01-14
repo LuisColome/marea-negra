@@ -80,9 +80,12 @@
             
             a {
                 border: 2px solid $primary-color;
+                background-color: $primary-color;
                 border-radius: $border-radius;
-                color: $primary-color;
+                color: $base-color;
                 margin-left: .5em;
+                text-transform: uppercase;
+                font-weight: 600;
 
                 @include media('<=mobile_menu') {
                     text-align: center;
@@ -92,7 +95,7 @@
                 
                 &:hover,
                 &:focus {
-                    background-color: $primary-color;
+                    background-color: $highlight;
                     color: $white;
                 }
 
