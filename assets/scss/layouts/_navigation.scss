@@ -14,6 +14,7 @@
 		clear: both;
 		line-height: 1;
 		margin: 0;
+        padding-left: 0;
 		width: 100%;
 	}
 
@@ -23,15 +24,16 @@
 
 		a {
 			border: none;
-			color: $base-color;
+			color: $mid-grey;
 			display: block;
 			font-size: 16px;
-			font-weight: 400;
+			font-weight: 500;
 			line-height: 1.2;
 			padding: .5em 1em;
             // margin-right: .7em;
 			position: relative;
 			text-decoration: none;
+            letter-spacing: .4px;
 		}
 
         &.menu-item-has-children {
@@ -45,16 +47,16 @@
             margin-right: 0;
         }
 
-		&:hover > a,
-        &:hover .submenu-expand svg {
-            fill: $primary-color;
-			color: $primary-color;
-		}
+		// &:hover > a,
+        // &:hover .submenu-expand svg {
+        //  fill: $primary-color;
+		// 	color: $primary-color;
+		// }
 
-		&.current-menu-item > a,
-		&.current-menu-ancestor > a {
-			color: $primary-color;
-		}
+		// &.current-menu-item > a,
+		// &.current-menu-ancestor > a {
+		// 	color: $primary-color;
+		// }
 
         span {
             display: inline-block;
@@ -68,7 +70,7 @@
                 height: 2px;
                 background: $primary-color;
                 transition: width .3s;
-                margin-top: 5px;
+                margin-top: 3px;
             }
         }
 
@@ -111,7 +113,8 @@
 
         a:focus,
         a:hover,
-        .current-menu-item > a,
+        &.current-menu-item > a,
+        &.current-menu-ancestor > a,
         .sub-menu .current-menu-item > a:focus,
         .sub-menu .current-menu-item > a:hover {
           text-decoration: none;
@@ -153,7 +156,23 @@
 
 	}
 
+    // Nav secondary (Footer navigation)
 	.nav-secondary {
+			display: flex;
+			justify-content: flex-start;
+
+        .menu-item {
+
+            a{
+                color: $light-grey;
+
+                &:hover,
+                &:focus {
+                    color: $primary-color;
+                }
+            }
+        }
+
 		.menu-item.search {
 			@include media("<=mobile_menu") {
 				padding: 4px 16px 16px;
@@ -191,15 +210,16 @@
 		display: flex;
 		flex-flow: column-reverse nowrap;
 
-		.nav-primary,
-		.nav-secondary {
+        // Primary navigation alignment on desktop.
+		.nav-primary {
 			display: flex;
 			justify-content: flex-end;
 		}
 
-		.nav-primary + .nav-secondary {
-			margin-bottom: 16px;
-		}
+        // when we use the secondary navigation on header or under it.
+		// .nav-primary + .nav-secondary {
+		// 	margin-bottom: 16px;
+		// }
 
 
 		.menu {
@@ -239,9 +259,9 @@
 			.menu-item {
 				float: none;
 
-				&:hover > a {
-					color: $primary-color;
-				}
+				// &:hover > a {
+				// 	color: $primary-color;
+				// }
 
                 .submenu-expand {
                     right: 15px;
@@ -258,13 +278,13 @@
 	@include media("<=mobile_menu") {
         position: fixed;
         width: 100%;
-        max-width: 350px;
+        max-width: 370px;
         height: 100%;
         top: 0;
         right: -100%;
-        background: $white;
-        transition: all .3s ease-in-out;
-        padding: 105px $grid-gap 0;
+        background: $base-color;
+        transition: all .4s ease-in-out;
+        padding: 112px $grid-gap 0;
         overflow: auto;
         z-index: 997;
 
@@ -272,15 +292,26 @@
             right: 0;
             overflow: auto;
 		}
+        
+		.menu-item {
+            
+            a {
+                padding: 16px;
+                font-size: 18px;
+                color: $light-grey;
+            }
 
-		.menu > .menu-item > a {
-			padding: 11px 18px;
-            font-size: 18px;
+            .submenu-expand {
+
+                svg {
+                    fill: $light-grey;
+                }
+            }
 		}
 
 		.sub-menu {
 			display: none;
-			padding-left: 12px;
+			padding-left: 16px;
 
             & > .menu-item > a {
                 font-size: 15px;
@@ -293,30 +324,42 @@
 /* Nav Header with Site logo
 --------------------------------------------- */
 
-.nav-header {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    padding-left: 20px;
-    display: flex;
-    align-items: center;
-    background-color: $primary-color;
+// .nav-header {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     height: $header-height;
+//     padding-left: 20px;
+//     display: flex;
+//     align-items: center;
+//     background-color: $primary-color;
+//     @include transition;
 
-    &__logo {
-        display: block;
-        width: 40px;
-        height: 40px;
-        text-indent: -9999px;
-    }
+//     .shrink & {
+//         height: $shrink-header;
+//     }
 
-    @include media('>tablet') {
-        display: none;
-    }
-}
+//     &__logo {
+//         display: block;
+//         width: $logo-width;
+//         // height: 40px;
+//         // text-indent: -9999px;
+//         color: $base-color;
+//         font-weight: 500;
+//         text-decoration: none;
+
+//         &:hover {
+//             color: $base-color;
+//         }
+//     }
+
+//     @include media('>tablet') {
+//         display: none;
+//     }
+// }
 
 /* Nav Header overlay layer
 --------------------------------------------- */
@@ -384,8 +427,8 @@
 	& > .search-toggle {
 		// position: absolute;
 		// top: 0;
-        width: 26px;
-        height: 18px;
+        // width: 30px;
+        // height: 20px;
 
 		@include media(">mobile_menu") {
 			display: none; // Only display the toggle menu on mobile.
@@ -434,108 +477,124 @@
 /* Toggles
 --------------------------------------------- */
 
-// .search-toggle,  // no search box for WhiteRiverManor
-.menu-toggle {
+// // .search-toggle,  // no search box for WhiteRiverManor
+// .menu-toggle {
+// 	@include button-reset;
+//     position: relative;
+//     display: block;
+//     width: 30px;
+//     height: 20px;
+// 	line-height: 0;
+// 	text-align: center;
+// 	order: 3;
+//     transition: all .35s ease-in-out;
 
-	@include button-reset;
-    position: relative;
-    display: block;
-	line-height: 0;
-	text-align: center;
-	order: 3;
-
-	.close {
-		display: none;
-	}
+// 	.close {
+// 		display: none;
+// 	}
 	
-	.toggl__bar {
-		display: block;
-		position: absolute;
-		height: 3px;
+// 	.toggl__bar {
+// 		display: block;
+// 		position: absolute;
+// 		height: 4px;
+// 		width: 100%;
+// 		background: $base-color;
+// 		border-radius: 2em;
+// 		opacity: 1;
+// 		right: 0;
+// 		transform: rotate(0deg);
+// 		transform-origin: center center;
+// 		transition: all .35s ease-in-out;
+
+// 		&.first {
+// 		top: 0px;
+// 		}
+
+// 		&.second {
+// 		top: 8px;
+// 		}
+
+// 		&.third {
+// 		top: 16px;
+// 		}
+// 	}
+
+// 	&:hover,
+// 	&:focus,
+// 	&.active {
+// 		background-color: transparent; // prevent button defaults
+// 	}
+
+// 	&.active {
+// 		background-color: transparent; // prevent button defaults
+//         transform: rotate(360deg);
+		
+//         .toggl__bar {
+// 			background: $light-grey;
+//             height: 4px;
+
+// 			&.first {
+// 				transform: rotate(45deg);
+//                 top: 2px;
+//                 right: -1px;
+//                 width: 60%;
+// 			}
+
+// 			&.third {
+// 				transform: rotate(-45deg);
+// 				top: 14px;
+//                 right: -1px;
+// 				width: 60%;
+// 			}
+// 		}
+// 	}
+// }
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    width: 32px;
+    background-color: transparent;
+    
+    .toggl__bar {
+        height: 4px;
+        margin-top: 4px;
 		width: 100%;
 		background: $base-color;
-		border-radius: 2em;
+		border-radius: 2px;
 		opacity: 1;
-		right: 0;
-		transform: rotate(0deg);
-		transform-origin: center center;
-		transition: all .35s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
 
-		&.first {
-		top: 0px;
-		}
-
-		&.second {
-		top: 6px;
-		}
-
-		&.third {
-		top: 12px;
-		}
-	}
-
-	&:hover,
+    &:hover,
 	&:focus,
 	&.active {
 		background-color: transparent; // prevent button defaults
 	}
+    
+    &.active {
+        background-color: transparent;
 
-	&.active {
-		background-color: transparent; // prevent button defaults
-		// .toggl__bar {
-		// 	background: $white;
-        //     height: 4px;
-		// 	&.first {
-		// 		transform: rotate(45deg);
-		// 		top: 0px;
-		// 		left: 8px;
-		// 		width: 60%;
-		// 	}
-		// 	&.second {
-		// 		left: -1em;
-		// 		opacity: 0;
-		// 	}
-		// 	&.third {
-		// 		transform: rotate(-45deg);
-		// 		top: 11px;
-		// 		left: 8px;
-		// 		width: 60%;
-		// 	}
-		// }
         .toggl__bar {
-			background: $grey_4;
-            height: 3px;
+            background: $light-grey;
 
-			&.first {
-				transform: rotate(315deg);
-                top: 10px;
-                right: -2px;
-                width: 50%;
-                height: 3px;
-			}
+            &.second,
+            &.third {
+                transition-delay: 100ms;
+            }
 
-			&.second {
-				transform: rotate(180deg);
-			}
+            &.first {
+                transform: rotate(-45deg) translateX(-6px) translateY(5px);
+            }
 
-			&.third {
-				transform: rotate(225deg);
-				top: 3px;
-                right: -2px;
-				width: 50%;
-                height: 3px;
-			}
-		}
-	}
+            &.second {
+                transform: rotate(45deg) ;
+            }
 
-	// &.active {
-
-	// 	.close {
-	// 		display: inline;
-	// 	}
-
-	// 	.open {
-	// 		display: none;
-	// 	}
-	// }
+            &.third {
+                transform: rotate(45deg) translateX(-5px) translateY(-6px);
+            }
+        }
+    }
 }

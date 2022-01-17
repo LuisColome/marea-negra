@@ -9,6 +9,7 @@
 /* Archive Styles (based on partials/archive).
 ------------------------------------------------------------------------------ */
 
+// Post grid
 .lcm-posts {
 
     &.grid {
@@ -26,6 +27,7 @@
     }
 }
 
+// Single post (on grid)
 .lcm-post {
     display: flex;
     flex-flow: column;
@@ -34,19 +36,23 @@
     //     flex-flow: row;
     // }
 
-    .lcm-post__image-link img {
-        border-radius: $border-radius;
+    &__image-link img {
+        border-radius: 0;
+    }
+
+    &__header {
+        padding: 16px;
     }
 
     .lcm-post__title {
-        line-height: 1;
+        @include font-sizes(22px, 24px);
+        // line-height: 1;
         margin: 0 0 $base-margin 0;
         
         a {
-            @include font-sizes(20px, 22px, 22px);
             text-decoration: none;
             color: $grey_9;
-            font-weight: 400;
+            // font-weight: 400;
             
             &:hover {
                 color: $primary-color;;
@@ -72,15 +78,20 @@
     }
 
 	.lcm-post__read-more-link {
+        color: $base-color;
 		text-decoration: none;
-		font-size: 60%;
-		text-transform: uppercase;
+		// font-size: 60%;
+		// text-transform: uppercase;
 
 		&::after {
-			content: "\2192";
+            content: "\2192";
 			display: inline-block;
 			margin-left: 4px;
 		}
+        
+        &:hover {
+            color: $primary-color;
+        }
 	}
 }
 
