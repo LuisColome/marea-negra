@@ -8,18 +8,18 @@
 
 .footer-widgets {
 	// background: brand-color( 'blue' );
-  	background: $grey_8;
+  	background: $base-color;
 	padding: 40px $wrap_edge 10px;
 	position: relative;
-	color: $white;
+	color: $light-grey;
 
-  .wrap {
+    .wrap {
 
-    &::before,
-    &::after {
-      content: none;
+        &::before,
+        &::after {
+            content: none;
+        }
     }
-  }
 
 	ul {
 		margin-bottom: 30px;
@@ -31,25 +31,25 @@
 	}
 
 	.widget-title {
-		color: $white;
+		color: $light-grey;
 		font-size: 16px;
 		font-weight: 700;
 		text-transform: uppercase;
 	}
 
 	a {
-		color: $white;
+		color: $light-grey;
 		text-decoration: none;
 
 		&:hover {
 			text-decoration: underline;
 		}
 
-		svg {
-			fill: $white;
-			@include icon-position( 20px );
-			margin-right: 12px;
-		}
+		// svg {
+			// fill: $light-grey;
+			// @include icon-position( 20px );
+			// margin-right: 12px;
+		// }
 	}
 
 	@include media("<tablet") {
@@ -92,10 +92,10 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-    background: $grey_10;
-	color: rgba( $white, .75 );
-	font-size: 14px;
-	padding: 32px 0;
+    background: $base-color;
+	color: $light-grey;
+	font-size: 16px;
+	padding: 32px $wrap_edge;
 	text-align: center;
 
 	.wrap {
@@ -119,6 +119,10 @@
 		margin-left: 12px;
 	}
 
+    .copyright {
+        color: $light-grey;
+    }
+
 	
 	@include media(">=tablet") {
 		text-align: left;
@@ -134,7 +138,6 @@
 		.copyright,
 		.footer-links {
 			display: inline-block;
-			margin-right: 20px;
 		}
 	}
 
@@ -144,17 +147,16 @@
     position: fixed;
     right: 20px;
     bottom: 20px;
-    background: $base-color;
+    background: $primary-color;
     border-radius: $border-radius;
     line-height: 0;
     padding: 10px;
     text-decoration: none;
-    // display: none;
     visibility: hidden;
     @include transition;
 
     svg {
-        fill: $white;
+        fill: $base-color;
         vertical-align: middle;
     }
 
@@ -165,7 +167,7 @@
     }
 
     &:hover {
-        background-color: $primary-color;
+        // background-color: $primary-color;
         opacity: 1;
     }
 }

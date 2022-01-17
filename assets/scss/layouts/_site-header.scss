@@ -84,21 +84,38 @@
 }
 
 .site-title {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1;
     margin: 0;
     overflow: hidden;
+    display: flex;
+    
+    a {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1;
+        color: $base-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .4px;
+        
+        span {
+            font-weight: 600;
+            @include transition;
+        }
+    }
+
 
     .wp-custom-logo & {
         text-indent: -9999;
     }
 
-    a,
     a:focus,
     a:hover {
-        color: $grey_8;
+        color: $base-color;
         text-decoration: none;
+
+        span {
+            color: $primary-color;
+        }
     }
 }
   
