@@ -5,7 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) (or at least I'll try to).
 
 
-#### [1.1.0] - 2022-01-14
+#### [1.1.0] - 2022-01-17
+#### Added
+- Colors y variables according to design
+- Google typography
+- Button styles, full and outlined (Gutenberg blocks)
+- Header and main navigation styles. 
+- Footer styles
 
 #### [1.0.0] - 2022-01-13
 #### Added

@@ -1,6 +1,6 @@
 # MareaNegra - Genesis Child Theme 
 
-[![MareaNegra Genesis Starter Theme v1.0.0 badge][changelog-badge]][changelog]  [![Version 1.0.0 Badge][version-badge]][changelog]  [![Last commit badge][last-commit]][last-commit-link]
+[![MareaNegra Genesis Starter Theme v1.1.0 badge][changelog-badge]][changelog]  [![Version 1.1.0 Badge][version-badge]][changelog]  [![Last commit badge][last-commit]][last-commit-link]
 
 ![MareaNegra Screenshot](screenshot.png)
 
@@ -41,7 +41,7 @@ Without these projects, this WordPress Genesis Starter Child Theme wouldn't be w
 
 
 [changelog]: ./CHANGELOG.md
-[changelog-badge]: https://img.shields.io/badge/Changelog-MareaNegra%20Genesis%20Starter%20Theme%20v1.0.0-orange
-[version-badge]: https://img.shields.io/badge/version-1.0.0-informational.svg
+[changelog-badge]: https://img.shields.io/badge/Changelog-MareaNegra%20Genesis%20Starter%20Theme%20v1.1.0-orange
+[version-badge]: https://img.shields.io/badge/version-1.1.0-informational.svg
 [last-commit]: https://img.shields.io/github/last-commit/luiscolome/MareaNegra/develop?color=yellow&logoColor=red
 [last-commit-link]: https://github.com/LuisColome/marea-negra/commit/develop
