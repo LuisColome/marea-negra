@@ -21,6 +21,7 @@
 @use "layouts/navigation";
 @use "layouts/sidebar";
 @use "layouts/singular";
+@use "layouts/single";
 @use "layouts/entry-meta";
 @use "layouts/post-summary";
 @use "layouts/comments";
@@ -37,12 +38,10 @@
 @use "components/blocks-core/cover";
 @use "components/blocks-core/media-text";
 @use "components/blocks-core/image-gallery";
-@use "components/blocks-core/separator";
 @use "components/blocks-core/tables";
 
 // -- Blocks Plugins
 @use "components/blocks-plugins/cf7";
-@use "components/blocks-plugins/genesis-simple-faq";
-@use "components/blocks-plugins/genesis-blocks";
+@use "components/blocks-plugins/kadence";
 
 @use "vendor/include-media";

@@ -10,13 +10,13 @@ $sans-serif: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 
 // Content
 $content-width: 768px;
-$block-margin: 20px;
+$block-margin: 1.5rem; // 24px (8pt design system)
 $base-margin: 1.1rem;
 $border-radius: 5px;
 
 // Grid
 $grid: grid;
-$grid-width: 1300px;
+$grid-width: 1128px;
 $grid-gap: 32px;
 $wrap_edge: $base-margin * 1.25;
 $margin_2x: $base-margin * 2;

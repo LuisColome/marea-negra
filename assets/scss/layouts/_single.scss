@@ -1,0 +1,9 @@
+@use "abstracts" as *;
+@use "../vendor/include-media" as *;
+
+/* Single post styles
+------------------------------------------------------------------------------ */
+
+.entry-featured-image {
+    margin-bottom: $block-margin;
+}

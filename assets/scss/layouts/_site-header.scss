@@ -1,8 +1,6 @@
 @use "abstracts" as *;
 @use "../vendor/include-media" as *;
 
-// Site Header 
-  
 /* Site Header
 ---------------------------------------------------------------------------- */
 
@@ -112,11 +110,11 @@
     a:focus,
     a:hover {
         color: $base-color;
+        background-color: $primary-color;
         text-decoration: none;
 
-        span {
-            color: $primary-color;
-        }
+        // span {
+        // }
     }
 }
   

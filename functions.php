@@ -86,7 +86,6 @@ function ea_child_theme_setup() {
 
 	// Editor Styles
 	add_theme_support( 'editor-styles' );
-	// add_editor_style( '/inc/gutenberg/style-editor.css' );
 	add_editor_style( '/assets/css/editor-style.css' );
 
 	// Remove image sizes
@@ -205,8 +204,8 @@ add_action( 'genesis_setup', 'ea_child_theme_setup', 15 );
  * @return array
  */
 function ea_comment_text( $args ) {
-	$args['title_reply']          = __( 'Leave A Comment', 'mareanegra' );
-	$args['label_submit']         = __( 'Post Comment',  'mareanegra' );
+	$args['title_reply']          = __( 'Comentarios', 'mareanegra' );
+	$args['label_submit']         = __( 'Publicar comentario',  'mareanegra' );
 	$args['comment_notes_before'] = '';
 	$args['comment_notes_after']  = '';
 	return $args;

@@ -1,4 +1,5 @@
 @use "abstracts" as *;
+@use "../vendor/include-media" as *;
 
 /* Typographical Elements - General styles
 --------------------------------------------- */
@@ -30,12 +31,6 @@ a {
     }
 }
 
-// ol,
-// ul {
-//     // margin: 0;
-//     // padding: 0;
-// }
-
 hr {
     border: 0;
     border-collapse: collapse;
@@ -65,9 +60,9 @@ p {
     margin: 0 0 28px;
     padding: 0;
 }
-// Add !important to override Gutenberg styles. 
+// Add !important to override Gutenberg styles.
 .has-small-font-size {
-    font-size: .9rem !important;
+    font-size: 0.9rem !important;
 }
 
 .has-normal-font-size {
@@ -76,12 +71,12 @@ p {
 
 .has-large-font-size {
     font-size: 1.2rem;
-    font-size: clamp(1.1rem, 1rem + .5vw, 1.25rem) !important;
+    font-size: clamp(1.1rem, 1rem + 0.5vw, 1.25rem) !important;
 }
 
 .has-huge-font-size {
     font-size: 1.5rem;
-    font-size: clamp(1.45rem, 1.2rem + .5vw, 1.65rem) !important;
+    font-size: clamp(1.45rem, 1.2rem + 0.5vw, 1.65rem) !important;
 }
 
 /* Headings
@@ -98,7 +93,7 @@ h6 {
     font-weight: 600;
     line-height: 1.2;
     margin: 1.15em 0 $block-margin;
-    scroll-margin-top: 5rem;  // for the header to not hide the title on anchor links. https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/
+    scroll-margin-top: 5rem; // for the header to not hide the title on anchor links. https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/
 
     &.entry-title,
     &.archive-title {
@@ -134,7 +129,7 @@ h3 {
     // font-size: clamp(1.6rem, 1.2rem + 1vw, 1.85rem);
 }
 
-h4{
+h4 {
     @include font-sizes(20px, 24px, 26px);
     // font-size: clamp(1.4rem, 1.1rem + .8vw, 1.7rem);
 }
@@ -153,54 +148,91 @@ h6 {
 
 /* Lists
 --------------------------------------------- */
-.entry-content > *,
-.block-editor > * {
-    
-    // Common lists
-    ul, ol {
-        padding-left: 2.5rem;
-        margin: $block-margin 0;
 
-        li {
-            // padding-bottom: .5rem;
+// Common lists
+ul,
+ol {
+    padding-left: 2rem;
+    margin: $block-margin 0;
 
-            &:last-child {
-                padding-bottom: 0;
-            }
+    li {
+        // padding-bottom: .5rem;
 
-            ul, ol {
-                padding-top: .5rem;
-            }
+        &:last-child {
+            padding-bottom: 0;
         }
 
-        &.wp-block-gallery {
-            padding-left: 0;
-
-            li {
-                padding-bottom: 0;
-            }
+        ul,
+        ol {
+            padding-top: 0.5rem;
         }
     }
 
-    // Custom checked list
-    ul.checked-list {
-        list-style: none;
+    &.wp-block-gallery {
+        padding-left: 0;
 
         li {
-            position: relative;
+            padding-bottom: 0;
+        }
+    }
+}
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: 2px;
-                right:0;
-                bottom: 0;
-                left: -26px;
-                width: 24px;
-                height: 24px;
-                background: url(../icons/utility/check.svg) no-repeat ;
-                background-size: cover;
-            }
+// Custom checked list
+ul.checked-list {
+    list-style: none;
+
+    li {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            right: 0;
+            bottom: 0;
+            left: -20px;
+            width: 16px;
+            height: 16px;
+            background: url(../icons/utility/check.svg) no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+ul.horizontal-list {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    @include media(">=mobile_menu") {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
+
+ul.centered-list {
+    padding-left: 8px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 32px;
+
+    li {
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @supports (gap: 16px) and (display: flex) {
+        gap: 16px;
+
+        li {
+            margin-bottom: 0;
         }
     }
 }
