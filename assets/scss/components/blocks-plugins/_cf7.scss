@@ -54,9 +54,11 @@
     }
 
     label {
-        font-size: 15px;
+        font-size: 16px;
+        color: $slate-blue;
 
         span.required {
+            margin: 0 2px;
             color: crimson;
             font-weight: 400;
         }
@@ -64,9 +66,11 @@
         .wpcf7-form-control-wrap {
 
             input,
-            textarea {
-                margin: .2em 0;
-                background-color: $grey_1;
+            textarea,
+            select {
+                margin: 4px 0;
+                background-color: $light-grey;
+                border-color: $grey_5;
 
                 &:focus{
                     border-color: $primary-color;
@@ -102,5 +106,35 @@
 
     input {
         border-radius: $border-radius;
+    }
+
+    // Política de privacidad
+    .wpcf7-acceptance {
+
+        .wpcf7-list-item {
+            margin: 0;
+        }
+
+        label {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+
+            input {
+                width: 20px;
+                min-width: 20px;
+                margin-right: 8px;
+            }
+
+            a.acceptance-dark {
+                // color: $mid-grey;
+                // text-decoration-color: $grey_dark;
+
+                &:hover {
+                    // color: $grey_dark;
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }

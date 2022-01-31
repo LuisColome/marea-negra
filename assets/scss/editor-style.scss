@@ -40,12 +40,15 @@
 @use "components/blocks-core/cover";
 @use "components/blocks-core/media-text";
 @use "components/blocks-core/image-gallery";
-@use "components/blocks-core/separator";
 @use "components/blocks-core/tables";
 
 // -- Blocks Plugins
 @use "components/blocks-plugins/cf7";
-@use "components/blocks-plugins/genesis-simple-faq";
-@use "components/blocks-plugins/genesis-blocks";
+@use "components/blocks-plugins/kadence";
 
 @use "vendor/include-media";
+
+// Fix the scroll bars on the editor
+p {
+    overflow: visible;
+}

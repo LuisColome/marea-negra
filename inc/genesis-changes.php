@@ -13,7 +13,7 @@ add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list'
 add_theme_support( 'genesis-responsive-viewport' );
 add_theme_support( 'genesis-after-entry-widget-area' );
 add_theme_support( 'genesis-structural-wraps', array( 'header', 'menu-secondary', 'site-inner', 'footer-widgets', 'footer' ) );
-add_theme_support( 'genesis-footer-widgets', 3 );
+add_theme_support( 'genesis-footer-widgets', 2 );
 add_theme_support( 'genesis-menus', array( 'primary' => 'Header Menu', 'secondary' => 'Footer Menu' ) );
 
 // Adds support for accessibility.
@@ -180,6 +180,8 @@ add_filter( 'body_class', 'genesis_sample_blocks_body_classes' );
 function featured_post_image() {
     if ( ! is_singular( 'post' ) )
       return;
-      the_post_thumbnail('cfhh-featured-images');
+      echo '<figure class="entry-featured-image">';
+      the_post_thumbnail('mn-featured-image');
+      echo '</figure>';
   }
   add_action( 'genesis_entry_content', 'featured_post_image', 8 );

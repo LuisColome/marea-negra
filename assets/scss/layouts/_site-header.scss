@@ -1,8 +1,6 @@
 @use "abstracts" as *;
 @use "../vendor/include-media" as *;
 
-// Site Header 
-  
 /* Site Header
 ---------------------------------------------------------------------------- */
 
@@ -17,16 +15,17 @@
     height: $header-height;
     background-color: $white;
     padding: 0 $wrap_edge;
-    border-bottom: 1px solid $grey_3;
     @include transition;
-
+    transition: all 400mx ease-in-out;
+    
     &::before,
     &::after { // clean the flex-flow 
         content: none;
     }
-
+    
     &.shrink {
         height: $shrink-header;
+        border-bottom: 1px solid $light-grey;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
         .site-title a {
@@ -111,11 +110,11 @@
     a:focus,
     a:hover {
         color: $base-color;
+        background-color: $primary-color;
         text-decoration: none;
 
-        span {
-            color: $primary-color;
-        }
+        // span {
+        // }
     }
 }
   

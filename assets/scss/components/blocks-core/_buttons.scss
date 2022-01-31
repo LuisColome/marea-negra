@@ -40,9 +40,9 @@ $default: nth( nth( $brand_colors, 1 ), 1 ); // first color in $brand_colors arr
 	}
 
     .is-style-outline > &:not(.has-text-color), // front-end
-    &.is-style-outline {
-        border: 2px solid brand-color( $default );
-        color: brand-color( $default );
+    .is-style-outline & {
+        border: 2px solid $base-color;
+        // color: brand-color( $default );
 		background-color: transparent;
         padding: .5em 1.5em;
 
@@ -54,8 +54,6 @@ $default: nth( nth( $brand_colors, 1 ), 1 ); // first color in $brand_colors arr
         }
     }
     
-    // > .wp-block-button__link:not(.has-text-color), .wp-block-button__link.is-style-outline:not(.has-text-color)
-
 	@each $name, $color in $brand_colors {
 
 		&.has-#{$name}-color:hover,

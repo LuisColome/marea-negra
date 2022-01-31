@@ -1,0 +1,59 @@
+@use "abstracts" as *;
+@use "../../vendor/include-media" as *;
+
+/* Kadence Styles
+------------------------------------------------------------------------------ */
+
+// Highlighte header
+.wp-block-kadence-advancedheading { 
+    
+    .kt-highlight {
+        color: $base-color;
+        background-color: $highlight;
+        padding: 0 .15em;
+    }
+}
+
+.entry-content {
+    //Fix a KAdence incompatibility on testimonial block
+    .kt-testimonial-grid-wrap {
+        
+        .kt-testimonial-item-wrap:last-child {
+            margin-right: auto;
+        }
+    }
+}
+
+.wp-block-kadence-infobox {
+
+    &.icon-long-border {
+        .kt-infobox-textcontent {
+            border-left: 2px solid $primary-color;
+        }
+        
+        &__black {
+            
+            .kt-infobox-textcontent {
+                border-left-color: $base-color;
+            }
+        }
+        
+        .kt-blocks-info-box-learnmore {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 7px;
+                top: 50%;
+                right: -24px;
+                transform: translateY(-50%);
+                background: url(../icons/utility/arrow-alt-right.svg) no-repeat;
+                background-size: cover;
+                cursor: pointer;
+                @include transition;
+            }
+        }
+    }
+}

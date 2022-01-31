@@ -9,7 +9,7 @@
 .footer-widgets {
 	// background: brand-color( 'blue' );
   	background: $base-color;
-	padding: 40px $wrap_edge 10px;
+	padding: $wrap_edge 16px;
 	position: relative;
 	color: $light-grey;
 
@@ -54,26 +54,18 @@
 
 	@include media("<tablet") {
 
-		.social-links li {
-				display: inline-block;
-				margin: 0;
-		}
+		// .social-links li {
+		// 		display: inline-block;
+		// 		margin: 0;
+		// }
 
-		.social-links .label {
-			display: none;
-		}
+		// .social-links .label {
+		// 	display: none;
+		// }
 
-		.footer-widgets-1 {
-			float: left;
-			width: calc( 50% - 8px );
-		}
-
-		.footer-widgets-2 {
-			float: right;
-			width: calc( 50% - 8px );
-		}
-
-		.footer-widgets-3 {
+		.footer-widgets-1,
+        .footer-widgets-2,
+        .footer-widgets-3 {
 			overflow: hidden;
 			width: 100%;
 		}
@@ -83,7 +75,7 @@
 		.wrap {
       max-width: $grid-width;
       margin: 0 auto;
-			@include columns( 3, 'div' );
+			@include columns( 2, 'div' );
 		}
 	}
 }
@@ -95,7 +87,7 @@
     background: $base-color;
 	color: $light-grey;
 	font-size: 16px;
-	padding: 32px $wrap_edge;
+	padding: $wrap_edge 16px;
 	text-align: center;
 
 	.wrap {

@@ -50,6 +50,9 @@
 
             &[class^="wp-block-kadence"] {
                 padding: 0;
+                // On Kadence, we manage margin top and bottom from the block tools.
+                margin-top: 0;
+                margin-bottom: 0;
             }
         }
 
@@ -111,17 +114,7 @@
 
 	&:first-child {
 		margin-top: 0;
-		// @include media(">=tablet") {
-		// 	margin-top: -48px;
-		// }
 	}
-
-	// &:last-child {
-	// 	margin-bottom: -36px;
-	// 	@include media(">=tablet") {
-	// 		margin-bottom: -48px;
-	// 	}
-	// }
 
 }
 
