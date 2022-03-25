@@ -5,7 +5,6 @@
 @use "abstracts/functions";
 @use "abstracts/variables";
 
-
 // Base
 @use "base/reset";
 @use "base/base";
@@ -43,5 +42,7 @@
 // -- Blocks Plugins
 @use "components/blocks-plugins/cf7";
 @use "components/blocks-plugins/kadence";
+@use "components/blocks-plugins/genesis-modal-box";
+@use "components/blocks-plugins/restrict";
 
 @use "vendor/include-media";

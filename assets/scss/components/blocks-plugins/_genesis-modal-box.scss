@@ -1,0 +1,30 @@
+.remodal {
+    // Separate the link from the form.
+    & > a {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .login-remember {
+        label {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+
+            input {
+                width: 18px;
+                height: 18px;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .login-submit {
+        input {
+            padding: 1rem 3rem;
+            border: none;
+            background-color: #f9cc39;
+            cursor: pointer;
+        }
+    }
+}
