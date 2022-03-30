@@ -312,7 +312,7 @@ textarea:focus,
 }
 
 a {
-  color: #FCC208;
+  color: #fcc208;
   text-decoration: underline;
   -webkit-text-decoration-color: #757575;
           text-decoration-color: #757575;
@@ -417,7 +417,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: #FCC208;
+  color: #fcc208;
   text-decoration: none;
 }
 h1:focus,
@@ -558,7 +558,7 @@ ul.horizontal-list {
   align-items: center;
   gap: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   ul.horizontal-list {
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -610,11 +610,11 @@ figure {
 /* Color Options
 --------------------------------------------- */
 .has-yellow-color {
-  color: #FCC208;
+  color: #fcc208;
 }
 
 .has-yellow-background-color {
-  background-color: #FCC208;
+  background-color: #fcc208;
 }
 
 .has-dark-grey-color {
@@ -634,27 +634,27 @@ figure {
 }
 
 .has-light-grey-color {
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
 .has-light-grey-background-color {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
 .has-slate-blue-color {
-  color: #414B54;
+  color: #414b54;
 }
 
 .has-slate-blue-background-color {
-  background-color: #414B54;
+  background-color: #414b54;
 }
 
 .has-white-color {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .has-white-background-color {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .site-container p.has-background {
@@ -1342,7 +1342,7 @@ table {
 /* Button
 --------------------------------------------- */
 .wp-block-button__link {
-  border: 2px solid #FCC208;
+  border: 2px solid #fcc208;
   border-radius: 5px;
   font-size: 20px;
   font-weight: 500;
@@ -1362,7 +1362,7 @@ table {
   color: #313335;
 }
 .wp-block-button__link:not(.has-background) {
-  background-color: #FCC208;
+  background-color: #fcc208;
 }
 .wp-block-button__link:not(.has-background):hover, .wp-block-button__link:not(.has-background):focus {
   border: 2px solid #fdce3a;
@@ -1374,12 +1374,12 @@ table {
   padding: 0.5em 1.5em;
 }
 .is-style-outline > .wp-block-button__link:not(.has-text-color):hover, .is-style-outline > .wp-block-button__link:not(.has-text-color):focus, .is-style-outline .wp-block-button__link:hover, .is-style-outline .wp-block-button__link:focus {
-  border: 2px solid #FCC208;
-  background-color: #FCC208;
+  border: 2px solid #fcc208;
+  background-color: #fcc208;
   color: #313335;
 }
 .wp-block-button__link.has-yellow-color:hover, .wp-block-button__link.has-yellow-color:focus {
-  color: #FCC208;
+  color: #fcc208;
 }
 .wp-block-button__link.has-yellow-background-color:hover, .wp-block-button__link.has-yellow-background-color:focus {
   background-color: #fdce3a;
@@ -1397,19 +1397,19 @@ table {
   background-color: #8a8a8a;
 }
 .wp-block-button__link.has-light-grey-color:hover, .wp-block-button__link.has-light-grey-color:focus {
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 .wp-block-button__link.has-light-grey-background-color:hover, .wp-block-button__link.has-light-grey-background-color:focus {
   background-color: white;
 }
 .wp-block-button__link.has-slate-blue-color:hover, .wp-block-button__link.has-slate-blue-color:focus {
-  color: #414B54;
+  color: #414b54;
 }
 .wp-block-button__link.has-slate-blue-background-color:hover, .wp-block-button__link.has-slate-blue-background-color:focus {
   background-color: #576571;
 }
 .wp-block-button__link.has-white-color:hover, .wp-block-button__link.has-white-color:focus {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .wp-block-button__link.has-white-background-color:hover, .wp-block-button__link.has-white-background-color:focus {
   background-color: white;
@@ -1603,7 +1603,7 @@ img.aligncenter {
 }
 .lcm-cf7-form label {
   font-size: 16px;
-  color: #414B54;
+  color: #414b54;
 }
 .lcm-cf7-form label span.required {
   margin: 0 2px;
@@ -1614,13 +1614,13 @@ img.aligncenter {
 .lcm-cf7-form label .wpcf7-form-control-wrap textarea,
 .lcm-cf7-form label .wpcf7-form-control-wrap select {
   margin: 4px 0;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   border-color: #bdbdbd;
 }
 .lcm-cf7-form label .wpcf7-form-control-wrap input:focus,
 .lcm-cf7-form label .wpcf7-form-control-wrap textarea:focus,
 .lcm-cf7-form label .wpcf7-form-control-wrap select:focus {
-  border-color: #FCC208;
+  border-color: #fcc208;
   outline: none;
 }
 .lcm-cf7-form label .wpcf7-form-control-wrap input.wpcf7-not-valid,
@@ -1639,7 +1639,7 @@ img.aligncenter {
   min-width: 230px;
   border: none;
   color: #ffffff;
-  background-color: #FCC208;
+  background-color: #fcc208;
   border-radius: 5px;
 }
 .lcm-cf7-form .lcm-cf7-form__input input:hover {
@@ -1678,7 +1678,7 @@ img.aligncenter {
 }
 
 .wp-block-kadence-infobox.icon-long-border .kt-infobox-textcontent {
-  border-left: 2px solid #FCC208;
+  border-left: 2px solid #fcc208;
 }
 .wp-block-kadence-infobox.icon-long-border__black .kt-infobox-textcontent {
   border-left-color: #313335;

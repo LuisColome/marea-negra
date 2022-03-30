@@ -312,7 +312,7 @@ textarea:focus,
 }
 
 a {
-  color: #FCC208;
+  color: #fcc208;
   text-decoration: underline;
   -webkit-text-decoration-color: #757575;
           text-decoration-color: #757575;
@@ -417,7 +417,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: #FCC208;
+  color: #fcc208;
   text-decoration: none;
 }
 h1:focus,
@@ -558,7 +558,7 @@ ul.horizontal-list {
   align-items: center;
   gap: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   ul.horizontal-list {
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -610,11 +610,11 @@ figure {
 /* Color Options
 --------------------------------------------- */
 .has-yellow-color {
-  color: #FCC208;
+  color: #fcc208;
 }
 
 .has-yellow-background-color {
-  background-color: #FCC208;
+  background-color: #fcc208;
 }
 
 .has-dark-grey-color {
@@ -634,27 +634,27 @@ figure {
 }
 
 .has-light-grey-color {
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
 .has-light-grey-background-color {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
 .has-slate-blue-color {
-  color: #414B54;
+  color: #414b54;
 }
 
 .has-slate-blue-background-color {
-  background-color: #414B54;
+  background-color: #414b54;
 }
 
 .has-white-color {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .has-white-background-color {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .site-container p.has-background {
@@ -849,7 +849,7 @@ figure {
   color: #414243;
 }
 .lcm-post .lcm-post__title a:hover {
-  color: #FCC208;
+  color: #fcc208;
 }
 .lcm-post .lcm-post__category {
   color: #9e9e9e;
@@ -866,7 +866,7 @@ figure {
   font-size: 17px;
 }
 .lcm-post .lcm-post__read-more-link {
-  color: #414B54;
+  color: #414b54;
   text-decoration: none;
   font-size: 16px;
 }
@@ -876,7 +876,7 @@ figure {
   margin-left: 4px;
 }
 .lcm-post .lcm-post__read-more-link:hover {
-  color: #FCC208;
+  color: #fcc208;
 }
 
 /* Archive Header
@@ -921,7 +921,7 @@ figure {
 --------------------------------------------- */
 .pagination {
   grid-column: 1/-1;
-  border-top: 1px solid #FCC208;
+  border-top: 1px solid #fcc208;
   font-size: 16px;
   text-align: center;
   padding-top: 22px;
@@ -978,7 +978,7 @@ figure {
 }
 .site-header.shrink {
   height: 55px;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eeeeee;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 .site-header.shrink .site-title a {
@@ -1044,7 +1044,7 @@ figure {
 .site-title a:focus,
 .site-title a:hover {
   color: #313335;
-  background-color: #FCC208;
+  background-color: #fcc208;
   text-decoration: none;
 }
 
@@ -1103,7 +1103,7 @@ figure {
   display: block;
   width: 0;
   height: 2px;
-  background: #FCC208;
+  background: #fcc208;
   transition: width 0.3s;
   margin-top: 3px;
 }
@@ -1114,15 +1114,15 @@ figure {
   justify-content: center;
 }
 .nav-menu .menu-item.highlight a {
-  border: 2px solid #FCC208;
-  background-color: #FCC208;
+  border: 2px solid #fcc208;
+  background-color: #fcc208;
   border-radius: 5px;
   color: #313335;
   margin-left: 0.5em;
   text-transform: uppercase;
   font-weight: 600;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-menu .menu-item.highlight a {
     text-align: center;
     margin-top: 1em;
@@ -1172,7 +1172,7 @@ figure {
 .nav-menu .submenu-expand.expanded + .sub-menu {
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .nav-menu .submenu-expand {
     top: 50%;
     transform: translateY(-45%);
@@ -1189,17 +1189,17 @@ figure {
   justify-content: flex-start;
 }
 .nav-menu .nav-secondary .menu-item a {
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 .nav-menu .nav-secondary .menu-item a:hover, .nav-menu .nav-secondary .menu-item a:focus {
-  color: #FCC208;
+  color: #fcc208;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-menu .nav-secondary .menu-item.search {
     padding: 4px 16px 16px;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 901px) {
   .nav-menu .nav-secondary .menu-item.search {
     margin: 5px 0 0 8px;
   }
@@ -1215,7 +1215,7 @@ figure {
 .nav-menu .nav-primary .menu-item.search button {
   padding: 12px;
 }
-@media (min-width: 769px) {
+@media (min-width: 901px) {
   .nav-menu {
     width: auto;
     display: flex;
@@ -1262,15 +1262,14 @@ figure {
     margin: -48px 0 0 215px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav-menu {
     position: fixed;
-    width: 100%;
-    max-width: 370px;
+    width: min(28rem, 100%);
     height: 100%;
     top: 0;
     right: -100%;
-    background: #313335;
+    background: #181a1b;
     transition: all 0.4s ease-in-out;
     padding: 112px 32px 0;
     overflow: auto;
@@ -1283,10 +1282,10 @@ figure {
   .nav-menu .menu-item a {
     padding: 16px;
     font-size: 18px;
-    color: #EEEEEE;
+    color: #eeeeee;
   }
   .nav-menu .menu-item .submenu-expand svg {
-    fill: #EEEEEE;
+    fill: #eeeeee;
   }
   .nav-menu .sub-menu {
     display: none;
@@ -1360,7 +1359,7 @@ figure {
   display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 901px) {
   .site-header .wrap > .menu-toggle, .site-header .wrap > .search-toggle {
     display: none;
   }
@@ -1387,10 +1386,10 @@ figure {
     margin: 0 auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .header-search {
     margin: 0 -48px;
-    width: calc( 100% + 96px );
+    width: calc(100% + 96px);
   }
 }
 .header-search:not(.active) {
@@ -1401,19 +1400,34 @@ figure {
 --------------------------------------------- */
 .menu-toggle {
   display: flex;
+  position: relative;
   flex-direction: column;
   padding: 2px;
   width: 32px;
+  height: 32px;
   background-color: transparent;
 }
 .menu-toggle .toggl__bar {
-  height: 4px;
+  display: block;
+  position: absolute;
+  height: 3px;
   margin-top: 4px;
   width: 100%;
   background: #313335;
   border-radius: 2px;
-  opacity: 1;
+  right: 0;
+  transform: rotate(0deg);
+  transform-origin: center center;
   transition: all 0.4s ease-in-out;
+}
+.menu-toggle .toggl__bar.first {
+  top: 0px;
+}
+.menu-toggle .toggl__bar.second {
+  top: 9px;
+}
+.menu-toggle .toggl__bar.third {
+  top: 18px;
 }
 .menu-toggle:hover, .menu-toggle:focus, .menu-toggle.active {
   background-color: transparent;
@@ -1422,19 +1436,20 @@ figure {
   background-color: transparent;
 }
 .menu-toggle.active .toggl__bar {
-  background: #EEEEEE;
+  background: #eeeeee;
 }
 .menu-toggle.active .toggl__bar.second, .menu-toggle.active .toggl__bar.third {
   transition-delay: 100ms;
 }
 .menu-toggle.active .toggl__bar.first {
-  transform: rotate(-45deg) translateX(-6px) translateY(5px);
+  transform: rotate(-45deg) translateX(-7px) translateY(6px);
 }
 .menu-toggle.active .toggl__bar.second {
   transform: rotate(45deg);
+  opacity: 0;
 }
 .menu-toggle.active .toggl__bar.third {
-  transform: rotate(45deg) translateX(-5px) translateY(-6px);
+  transform: rotate(45deg) translateX(-6px) translateY(-6px);
 }
 
 /* Sidebar
@@ -1661,8 +1676,8 @@ figure {
   height: 16px;
 }
 .entry-tags a:hover {
-  background-color: #FCC208;
-  border-color: #FCC208;
+  background-color: #fcc208;
+  border-color: #fcc208;
 }
 
 .breadcrumb {
@@ -1673,7 +1688,7 @@ figure {
   color: #9e9e9e;
 }
 .breadcrumb a {
-  color: #FCC208;
+  color: #fcc208;
 }
 .breadcrumb a:hover {
   color: #9e9e9e;
@@ -2006,7 +2021,7 @@ textarea:focus:-ms-input-placeholder {
   background: #313335;
   padding: 1.375rem 16px;
   position: relative;
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 .footer-widgets .wrap::before, .footer-widgets .wrap::after {
   content: none;
@@ -2019,13 +2034,13 @@ textarea:focus:-ms-input-placeholder {
   margin-bottom: 12px;
 }
 .footer-widgets .widget-title {
-  color: #EEEEEE;
+  color: #eeeeee;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
 }
 .footer-widgets a {
-  color: #EEEEEE;
+  color: #eeeeee;
   text-decoration: none;
 }
 .footer-widgets a:hover {
@@ -2073,7 +2088,7 @@ textarea:focus:-ms-input-placeholder {
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
   background: #313335;
-  color: #EEEEEE;
+  color: #eeeeee;
   font-size: 16px;
   padding: 1.375rem 16px;
   text-align: center;
@@ -2095,7 +2110,7 @@ textarea:focus:-ms-input-placeholder {
   margin-left: 12px;
 }
 .site-footer .copyright {
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 @media (min-width: 768px) {
   .site-footer {
@@ -2117,7 +2132,7 @@ textarea:focus:-ms-input-placeholder {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  background: #FCC208;
+  background: #fcc208;
   border-radius: 5px;
   line-height: 0;
   padding: 10px;
@@ -2256,7 +2271,7 @@ textarea:focus:-ms-input-placeholder {
 /* Button
 --------------------------------------------- */
 .wp-block-button__link {
-  border: 2px solid #FCC208;
+  border: 2px solid #fcc208;
   border-radius: 5px;
   font-size: 20px;
   font-weight: 500;
@@ -2276,7 +2291,7 @@ textarea:focus:-ms-input-placeholder {
   color: #313335;
 }
 .wp-block-button__link:not(.has-background) {
-  background-color: #FCC208;
+  background-color: #fcc208;
 }
 .wp-block-button__link:not(.has-background):hover, .wp-block-button__link:not(.has-background):focus {
   border: 2px solid #fdce3a;
@@ -2288,12 +2303,12 @@ textarea:focus:-ms-input-placeholder {
   padding: 0.5em 1.5em;
 }
 .is-style-outline > .wp-block-button__link:not(.has-text-color):hover, .is-style-outline > .wp-block-button__link:not(.has-text-color):focus, .is-style-outline .wp-block-button__link:hover, .is-style-outline .wp-block-button__link:focus {
-  border: 2px solid #FCC208;
-  background-color: #FCC208;
+  border: 2px solid #fcc208;
+  background-color: #fcc208;
   color: #313335;
 }
 .wp-block-button__link.has-yellow-color:hover, .wp-block-button__link.has-yellow-color:focus {
-  color: #FCC208;
+  color: #fcc208;
 }
 .wp-block-button__link.has-yellow-background-color:hover, .wp-block-button__link.has-yellow-background-color:focus {
   background-color: #fdce3a;
@@ -2311,19 +2326,19 @@ textarea:focus:-ms-input-placeholder {
   background-color: #8a8a8a;
 }
 .wp-block-button__link.has-light-grey-color:hover, .wp-block-button__link.has-light-grey-color:focus {
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 .wp-block-button__link.has-light-grey-background-color:hover, .wp-block-button__link.has-light-grey-background-color:focus {
   background-color: white;
 }
 .wp-block-button__link.has-slate-blue-color:hover, .wp-block-button__link.has-slate-blue-color:focus {
-  color: #414B54;
+  color: #414b54;
 }
 .wp-block-button__link.has-slate-blue-background-color:hover, .wp-block-button__link.has-slate-blue-background-color:focus {
   background-color: #576571;
 }
 .wp-block-button__link.has-white-color:hover, .wp-block-button__link.has-white-color:focus {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .wp-block-button__link.has-white-background-color:hover, .wp-block-button__link.has-white-background-color:focus {
   background-color: white;
@@ -2517,7 +2532,7 @@ img.aligncenter {
 }
 .lcm-cf7-form label {
   font-size: 16px;
-  color: #414B54;
+  color: #414b54;
 }
 .lcm-cf7-form label span.required {
   margin: 0 2px;
@@ -2528,13 +2543,13 @@ img.aligncenter {
 .lcm-cf7-form label .wpcf7-form-control-wrap textarea,
 .lcm-cf7-form label .wpcf7-form-control-wrap select {
   margin: 4px 0;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   border-color: #bdbdbd;
 }
 .lcm-cf7-form label .wpcf7-form-control-wrap input:focus,
 .lcm-cf7-form label .wpcf7-form-control-wrap textarea:focus,
 .lcm-cf7-form label .wpcf7-form-control-wrap select:focus {
-  border-color: #FCC208;
+  border-color: #fcc208;
   outline: none;
 }
 .lcm-cf7-form label .wpcf7-form-control-wrap input.wpcf7-not-valid,
@@ -2553,7 +2568,7 @@ img.aligncenter {
   min-width: 230px;
   border: none;
   color: #ffffff;
-  background-color: #FCC208;
+  background-color: #fcc208;
   border-radius: 5px;
 }
 .lcm-cf7-form .lcm-cf7-form__input input:hover {
@@ -2592,7 +2607,7 @@ img.aligncenter {
 }
 
 .wp-block-kadence-infobox.icon-long-border .kt-infobox-textcontent {
-  border-left: 2px solid #FCC208;
+  border-left: 2px solid #fcc208;
 }
 .wp-block-kadence-infobox.icon-long-border__black .kt-infobox-textcontent {
   border-left-color: #313335;
@@ -2640,7 +2655,7 @@ img.aligncenter {
 .restricted {
   position: relative;
   width: 100%;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   border: 1px solid #bdbdbd;
   border-radius: 4px;
   padding: 25px;
