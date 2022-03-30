@@ -14,23 +14,25 @@ $black: #000;
 
 // Brand Colors
 $brand_colors: (
-    'yellow' : #FCC208,
-    'dark-grey'   : #313335,
-	'mid-grey': #707070,
-    'light-grey' : #EEEEEE,
-    'slate-blue' : #414B54,
-	'white'	: #FFFFFF,
+    "yellow": #fcc208,
+    "dark-grey": #313335,
+    "mid-grey": #707070,
+    "light-grey": #eeeeee,
+    "slate-blue": #414b54,
+    "white": #ffffff,
 );
 
 // color variables
-$primary-color: #FCC208;
+$primary-color: #fcc208;
 $secondary-color: #707070;
 $base-color: #313335;
 $highlight: #f9cc39;
 $border-color: $grey_4;
-$light-grey: #EEEEEE;
+$light-grey: #eeeeee;
 $mid-grey: #707070;
-$slate-blue : #414B54;
+$slate-blue: #414b54;
+
+$mobile_menu_bg: hsl(210, 4%, 10%);
 
 // Social colors
 $facebook: #3b5998;
@@ -46,28 +48,27 @@ $pinterest: #cb2027;
  *  https://github.com/billerickson/EA-Genesis-Child/blob/master/assets/scss/modules/_brand-color.scss
  *
  */
- 
- @function brand-color( $key, $variant: null ) {
-	@if map-has-key( $brand_colors, $key ) {
-		$color: map-get( $brand_colors, $key );
-		@if ( 'lighten' == $variant ) {
-			$lighten_key: $key + '_lighten';
-			@if map-has-key( $brand_colors, $lighten_key ) {
-				$color: #{map-get( $brand_colors, $lighten_key )};
-			} @else {
-				$color: lighten( $color, 10% );
-			}
-		}
-		@else if( 'darken' == $variant ) {
-			$darken_key: $key + '_darken';
-			@if map-has-key( $brand_colors, $darken_key ) {
-				$color: #{map-get( $brand_colors, $darken_key )};
-			} @else {
-				$color: darken( $color, 10% );
-			}
-		}
-		@return $color;
-	} @else {
-		@error "The #{$key} color could not be found in $brand_colors";
-	}
+
+@function brand-color($key, $variant: null) {
+    @if map-has-key($brand_colors, $key) {
+        $color: map-get($brand_colors, $key);
+        @if ("lighten" == $variant) {
+            $lighten_key: $key + "_lighten";
+            @if map-has-key($brand_colors, $lighten_key) {
+                $color: #{map-get($brand_colors, $lighten_key)};
+            } @else {
+                $color: lighten($color, 10%);
+            }
+        } @else if("darken" == $variant) {
+            $darken_key: $key + "_darken";
+            @if map-has-key($brand_colors, $darken_key) {
+                $color: #{map-get($brand_colors, $darken_key)};
+            } @else {
+                $color: darken($color, 10%);
+            }
+        }
+        @return $color;
+    } @else {
+        @error "The #{$key} color could not be found in $brand_colors";
+    }
 }
