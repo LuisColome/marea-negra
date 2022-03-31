@@ -47,7 +47,7 @@ function ea_login_logo() {
         overflow: hidden;
         text-indent: -9999em;
         width: 312px;
-        height: 100px;
+        height: 160px;
     }
     
     </style>
