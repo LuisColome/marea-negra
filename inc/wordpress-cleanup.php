@@ -179,3 +179,26 @@ add_filter( 'excerpt_more', 'lcm_excerpt_more' );
 // Remove inline CSS for emoji
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
+/**
+ * Remove admin bar for subscribers.
+ *
+ */
+function lcm_hide_admin_bar_for_subscribers() {
+    if (!current_user_can('edit_posts') && !is_admin()) {
+        show_admin_bar(false);
+    }
+}
+add_action('after_setup_theme', 'lcm_hide_admin_bar_for_subscribers');
+
+
+/**
+ * Remove access to dashboard for susbcribers
+ *
+ */
+function block_subscribers_to_dashboard() {  
+    if ( is_admin() && current_user_can( 'subscriber' ) && ! ( defined( ‘DOING_AJAX’ ) && DOING_AJAX ) ) { 
+        wp_redirect( home_url() ); 
+        exit; 
+    } 
+} 
+add_action( 'init', 'block_subscribers_to_dashboard' ); 
