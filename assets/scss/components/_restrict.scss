@@ -1,0 +1,74 @@
+@use "abstracts" as *;
+
+/* Restrict content Pro
+------------------------------------------------------------------------------ */
+
+// Restricted content alert
+.restricted {
+    position: relative;
+    width: 100%;
+    background-color: $light-grey;
+    border: 1px solid $grey_5;
+    border-radius: 4px;
+    padding: 25px;
+    margin: 4rem auto;
+
+    &__icon {
+        width: 55px;
+        margin: 0 auto 10px;
+    }
+
+    &__copy {
+        p {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__icon,
+    &__copy {
+        position: relative;
+        z-index: 9;
+    }
+}
+
+// RCP forms
+.rcp_form {
+    .rcp_button,
+    input.rcp-button {
+        box-shadow: none;
+        background-color: $primary-color;
+        border: 2px solid $primary-color;
+        border-radius: $border-radius;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.55;
+        padding: 0.5rem 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-block: 1rem;
+
+        &:hover {
+            background-color: $highlight;
+        }
+    }
+
+    // Form sections
+    fieldset {
+        margin-block: 1rem 2rem;
+    }
+
+    // legends - kind of titles
+    legend {
+        margin-block-end: 1rem;
+        @include font-sizes(20px, 24px, 26px);
+        font-weight: 500;
+    }
+}
+
+// Restrict Content Pro Tables
+.rcp_table {
+    width: 100%;
+    text-align: left;
+    margin-block: 1rem 2rem;
+}

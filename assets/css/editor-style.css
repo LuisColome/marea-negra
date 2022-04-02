@@ -1015,7 +1015,9 @@ div[data-type="core/button"] div[data-block] {
 
 /* Forms
 --------------------------------------------- */
-input, select, textarea {
+input,
+select,
+textarea {
   background: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
@@ -1024,6 +1026,11 @@ input, select, textarea {
   line-height: 24px;
   padding: 14px 16px;
   width: 100%;
+}
+
+[type=checkbox],
+[type=radio] {
+  width: fit-content;
 }
 
 select {
